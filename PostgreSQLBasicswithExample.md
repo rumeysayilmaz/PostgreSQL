@@ -43,7 +43,12 @@ Replace the <dbname> below with the name of database you would like to connect t
 ```sh
 postgres-# \c <dbname>
 ```
-
+### Granting all access privileges to a user on a database
+The ```database_name``` and the ```username``` below are to be replaced with the respective cases:  
+```sh
+postgres-# GRANT ALL PRIVILEGES ON DATABASE database_name TO username;
+```
+  
 ### Disconnect from PostgreSQL database
 ```sh
 postgres-# \q
